@@ -7,7 +7,7 @@ import { InputTextBoxComponent } from './components/input-text-box/input-text-bo
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {MatInputModule} from '@angular/material';
-import { HeaderComponent } from './components/logo/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { AnalysisComponent } from './components/analysis/analysis.component';
 
 @NgModule({
