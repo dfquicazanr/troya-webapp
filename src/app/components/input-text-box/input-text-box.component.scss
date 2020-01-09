@@ -1,9 +1,19 @@
 .text-box {
   display: block;
   padding: 0;
+  text-align: center;
   &__input {
-    display: block;
-    min-width: 600px;
+    display: inline-block;
+    min-width: 400px;
+
+    max-width: 80%;
     margin: 0 auto;
+    height: 19px;
+  }
+  &__button {
+    margin-left: 10px;
+    display: inline-block;
+    color: #3d2117;
+    height: 100%;
   }
 }

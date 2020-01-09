@@ -1,10 +1,13 @@
-<router-outlet></router-outlet>
-<app-header></app-header>
-<app-input-text-box
-  [(text)]="text"
->
-</app-input-text-box>
+<div class="app-container">
+  <app-header></app-header>
+  <app-input-text-box
+    [(text)]="newsUrl"
+  >
+  </app-input-text-box>
 
-<app-analysis>
+  <app-analysis
+    [newsUrl]="newsUrl"
+    [analysis]="analysis">
+  </app-analysis>
 
-</app-analysis>
+</div>

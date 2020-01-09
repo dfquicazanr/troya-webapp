@@ -1,0 +1,23 @@
+.analysis {
+  margin-top: 15px;
+  display: grid;
+  grid-auto-columns: 50% 50%;
+  &__iframe {
+    display: block;
+    grid-column: 1;
+    margin: 0;
+    &__element {
+      display: block;
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    display: block;
+    white-space: pre-wrap;
+    grid-column: 2;
+    width: 100%;
+  }
+}

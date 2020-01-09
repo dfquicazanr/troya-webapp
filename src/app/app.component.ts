@@ -7,13 +7,16 @@ import {AylienService} from './services/aylien.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  text = 'http://techcrunch.com/2015/07/16/microsoft-will-never-give-up-on-mobile';
+  newsUrl = 'http://techcrunch.com/2015/07/16/microsoft-will-never-give-up-on-mobile';
+  analysis: object;
 
   constructor(private aylienService: AylienService) {
   }
 
 
   ngOnInit(): void {
-    this.aylienService.classify(this.text);
+    // @ts-ignore
+    this.aylienService.classify(this.newsUrl)
+      .subscribe(response => this.analysis = response);
   }
 }

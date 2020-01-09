@@ -1,1 +1,10 @@
-{{analysis}}
+<div class="analysis">
+  <div class="analysis__iframe">
+    <iframe class="analysis__iframe__element" [src]="newsUrl | sanitizeUrl"></iframe>
+  </div>
+  <div class="analysis__text">
+    <h2>{{analysis.categories[0].label | capitalize}}</h2>
+    <h3>{{analysis.categories[0].confidence | toPercentage}} Confident</h3>
+    <p [innerHTML]="analysis.text"></p>
+  </div>
+</div>
