@@ -1,13 +1,10 @@
-<div class="app-container">
-  <app-header></app-header>
-  <app-input-text-box
-    [(text)]="newsUrl"
-  >
-  </app-input-text-box>
+<app-header></app-header>
+<app-input-text-box
+  [(text)]="newsUrl"
+>
+</app-input-text-box>
 
-  <app-analysis
-    [newsUrl]="newsUrl"
-    [analysis]="analysis">
-  </app-analysis>
-
-</div>
+<app-analysis
+  [newsUrl]="newsUrl"
+  [analysis]="analysis">
+</app-analysis>
