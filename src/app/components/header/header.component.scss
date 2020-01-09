@@ -1,0 +1,22 @@
+.troya-logo {
+  width: 100%;
+  margin: 40px 0;
+  &__image {
+    display: block;
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  &__label {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: #3d2117;
+    font-weight: bolder;
+  }
+  &__subtitle {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+}

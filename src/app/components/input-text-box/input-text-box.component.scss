@@ -1,0 +1,9 @@
+.text-box {
+  display: block;
+  padding: 0;
+  &__input {
+    display: block;
+    min-width: 600px;
+    margin: 0 auto;
+  }
+}
